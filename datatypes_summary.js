@@ -10,7 +10,7 @@ const outsideTemp = null
 let userEmail;
 
 const id = Symbol('123')
-const anotherId = SVGSymbolElement('123')
+const anotherId = Symbol('123')
 
 console.log(id === anotherId);
 
@@ -22,7 +22,7 @@ const bigNumber = 373879217972187n
 // Array, Objects, Functions
 
 const heros = ["shaktiman", "spiderman", "doga"];
-let myOjj = {
+let myObj = {
     name : "sanju",
     age : 21,
 }
@@ -30,4 +30,30 @@ let myOjj = {
 const myFunction = function(){
     console.log("Hello world");
 }
+
+
+// ++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap(Non-Primitive)
+
+let myYoutubename = sk65ktmvlogs
+
+let anothername = myYoutubename
+anothername = "sanjuktm"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "sanju@google.com"
+
+console.log(userOne);
+console.log(userTwo);
+
 
